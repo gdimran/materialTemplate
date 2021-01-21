@@ -1,0 +1,174 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: #F6F7FF;
+}
+
+.toolbar{
+    margin-top: 65px;
+}
+#demo-absolute-fab {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1;
+}
+.form-input-style{
+    padding:15px;
+}
+.mdc-form-field{
+    display: flex;
+    margin: 15px;
+}
+.userinfo{
+    padding: 0 16px;
+}
+.userinfo p{
+    margin: 0 auto;
+}
+.userinfo h4 {
+    margin: 15px 0 7px 0;
+    color: inherit;
+}
+.circle-bg.mdc-list-item__graphic{
+    color: #fff;
+}
+
+.circle-bg{
+    background-color:#0b8544;
+    padding: 5px;
+    text-align: center;
+    line-height:30px;
+    font-size:20px;
+    border-radius: 50%;
+}
+#message ul.mdc-list li.mdc-list-item {
+    margin: 10px 0;
+}
+#message ul.mdc-list li.mdc-list-item span.mdc-list-item__text{
+    padding-bottom: 10px;
+}
+
+/*----------maincontent area--------------*/
+.profile-menu {
+    margin: 70px 0 0 0;
+    }
+.profile-menu .mdc-card {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+}
+.page-title{
+    line-height: 50px;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.rounded-button{
+    border-radius: 20px;
+}
+.profile-pic {
+	border: 3px dotted #3CD4A0;
+	display: flex;
+	padding: 5px;
+	align-items: center;
+	border-radius: 50%;
+	justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+    overflow: hidden;
+}
+.profile-pic img {
+	width: 100%;
+	border-radius: 50%;
+}
+.personal-sec {
+	display: flex;
+    padding: 15px;
+    height: 330px;
+}
+.info-sec{
+    padding: 15px;
+    height: 330px;
+}
+.social-icon ul li {
+	list-style: none;
+	display: inline-flex;
+	padding: 5px;
+	font-size: 20px;
+}
+.social-icon ul li a{
+    color:#777;
+}
+.profile-image {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	flex-direction: column;
+}
+.name h4 {
+	font-size: 25px;
+	margin: 10px 0;
+}
+.job-title {
+	color: #777;
+}
+.website {
+	padding: 5px 0;
+    color: #3CD4A0;
+    margin: 5px 0;
+}
+.social-icon ul {
+	padding-left: 0;
+}
+.profile-info {
+	padding-left: 20px;
+}
+.badge-root{
+    display: inline-flex;
+    position: relative;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+.badge-single {
+	height: 20px;
+	display: flex;
+	padding: 0 6px;
+	z-index: 1;
+	flex-wrap: wrap;
+	font-size: 0.75rem;
+	min-width: 20px;
+	box-sizing: border-box;
+	transition: transform 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	align-items: center;
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-weight: 500;
+	line-height: 1;
+	align-content: center;
+	border-radius: 10px;
+	flex-direction: row;
+	justify-content: center;
+}
+.info-text {
+	padding: 0 22px;
+}
+.info-text li{
+    line-height: 30px;
+}
+.mdc-list-item i {
+	font-size: 25px;
+}
+.fa.fa-mobile-phone {
+        padding: 0 10px;
+}
+.expertist-list li {
+	margin: 10px 0;
+	padding: 10px 0;
+	border-bottom: 1px solid #efefef;
+}
+.expertist-list {
+	padding: 0 22px;
+}

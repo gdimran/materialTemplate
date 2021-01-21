@@ -5,17 +5,376 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/color.css" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <title>Dashboard</title>
 </head>
 
-<body>
+<body class="mdc-typography--body2">
+    <section id="header">
+        <header class="mdc-top-app-bar">
+            <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+                        aria-label="Open navigation menu">menu</button>
+                    <span class="mdc-top-app-bar__title">Page title</span>
+                </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+                    <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+                        aria-label="Search">search</button>
+                    <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+                        aria-label="notification_important">notification_important</button>
+                    <button id="msgbtn" class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+                        aria-label="mail_outline">mail_outline</button>
+
+                    <div id="toolbar" class="toolbar mdc-menu-surface--anchor">
+                        <div id="message" class="mdc-menu mdc-menu-surface">
+                            <div class="userinfo">
+                                <h4 class="toolbar-heading">New Message</h4>
+                                <a class="noticeLink">4 New Message</a>
+                            </div>
+
+                            <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical"
+                                tabindex="-1">
+                                <li class="mdc-list-item role=" menuitem" mdc-ripple-upgraded" tabindex="0">
+                                    <span class="mdc-list-item__graphic circle-bg material-icons" aria-hidden="true">
+                                        person
+                                    </span>
+                                    <span class="mdc-list-item__text">
+                                        <span class="mdc-list-item__primary-text">
+                                            Imran Hossain
+                                        </span>
+                                        <span class="mdc-list-item__secondary-text">
+                                            Hi, It's an emergency, please resonse.
+                                        </span>
+                                    </span>
+                                    <span class="mdc-list-item__ripple"></span>
+                                </li>
+                                <li class="mdc-list-item role=" menuitem" mdc-ripple-upgraded" tabindex="0">
+                                    <span class="mdc-list-item__graphic circle-bg material-icons" aria-hidden="true">
+                                        person
+                                    </span>
+                                    <span class="mdc-list-item__text">
+                                        <span class="mdc-list-item__primary-text">
+                                            Ujjal Hossain
+                                        </span>
+                                        <span class="mdc-list-item__secondary-text">
+                                            Hi, It's an emergency, please resonse.
+                                        </span>
+                                    </span>
+                                    <span class="mdc-list-item__ripple"></span>
+                                </li>
+                                <li class="mdc-list-item role=" menuitem" mdc-ripple-upgraded" tabindex="0">
+                                    <span class="mdc-list-item__graphic circle-bg material-icons" aria-hidden="true">
+                                        person
+                                    </span>
+                                    <span class="mdc-list-item__text">
+                                        <span class="mdc-list-item__primary-text">
+                                            Rakibul Islam
+                                        </span>
+                                        <span class="mdc-list-item__secondary-text">
+                                            Hi, It's an emergency, please resonse.
+                                        </span>
+                                    </span>
+                                    <span class="mdc-list-item__ripple"></span>
+                                </li>
+                                <li class="mdc-list-item role=" menuitem" mdc-ripple-upgraded" tabindex="0">
+                                    <span class="mdc-list-item__graphic circle-bg material-icons" aria-hidden="true">
+                                        person
+                                    </span>
+                                    <span class="mdc-list-item__text">
+                                        <span class="mdc-list-item__primary-text">
+                                            Abdul Hai
+                                        </span>
+                                        <span class="mdc-list-item__secondary-text">
+                                            Hi, It's an emergency, please resonse.
+                                        </span>
+                                    </span>
+                                    <span class="mdc-list-item__ripple"></span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+                        aria-label="Options">more_vert</button>
+                    <button id="account" class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+                        aria-label="Account">account_circle</button>
+                    <h4 class="userFullname">Hi, Imran Hossain</h4>
+                    <div id="toolbar" class="toolbar mdc-menu-surface--anchor">
+                        <div id="actinfo" class="mdc-menu mdc-menu-surface">
+                            <div class="userinfo">
+                                <h4 class="userFullname">Hi, Imran Hossain</h4>
+                                <p class="userEmail">gdimran@gmail.com</p>
+                            </div>
+
+                            <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical"
+                                tabindex="-1">
+                                <li class="mdc-list-item" role="menuitem">
+                                    <span class="material-icons mdc-list-item__graphic">settings</span>
+                                    <span class="mdc-list-item__ripple"></span>
+                                    <span class="mdc-list-item__text">Account Settings</span>
+                                </li>
+                                <li class="mdc-list-item" role="menuitem">
+                                    <span class="material-icons mdc-list-item__graphic">lock_open</span>
+                                    <span class="mdc-list-item__ripple"></span>
+                                    <span class="mdc-list-item__text">Logout</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
 
+                </section>
+            </div>
+        </header>
+    </section>
+    <section id="drawer">
+        <aside class="mdc-drawer mdc-drawer--modal">
+            <div class="mdc-drawer__header">
+                <h3 class="mdc-drawer__title">Mail</h3>
+                <h6 class="mdc-drawer__subtitle">email@material.io</h6>
+            </div>
+            <div class="mdc-drawer__content">
+                <nav class="mdc-list">
+                    <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page" tabindex="0">
+                        <span class="mdc-list-item__ripple"></span>
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+                        <span class="mdc-list-item__text">Inbox</span>
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <span class="mdc-list-item__ripple"></span>
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+                        <span class="mdc-list-item__text">Outgoing</span>
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <span class="mdc-list-item__ripple"></span>
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+                        <span class="mdc-list-item__text">Drafts</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <div id="scrollbar" class="mdc-drawer-scrim"></div>
+    </section>
+
+    <section class="menu-content">
+        <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-12">
+                    <div class="profile-menu">
+                        <div class="mdc-card">
+                            <div class="page-title">Portfolio</div>
+                            <div class="mdc-card__actions">
+                                <div class="mdc-card__action-buttons">
+                                    <button class="mdc-button mdc-card__action mdc-card__action--button">
+                                        <div class="mdc-button__ripple"></div>
+                                        <span class="mdc-button__label">About me</span>
+                                        <i class="material-icons mdc-button__icon">person</i>
+                                    </button>
+                                    <button class="mdc-button mdc-card__action mdc-card__action--button">
+                                        <div class="mdc-button__ripple"></div>
+                                        <span class="mdc-button__label">Resume</span>
+                                        <i class="material-icons mdc-button__icon">text_snippet</i>
+                                    </button>
+                                    <button class="mdc-button mdc-card__action mdc-card__action--button">
+                                        <div class="mdc-button__ripple"></div>
+                                        <span class="mdc-button__label">Portfolio</span>
+                                        <i class="material-icons mdc-button__icon">camera</i>
+                                    </button>
+                                    <button class="mdc-button mdc-card__action mdc-card__action--button">
+                                        <div class="mdc-button__ripple"></div>
+                                        <span class="mdc-button__label">Services</span>
+                                        <i class="material-icons mdc-button__icon">design_services</i>
+                                    </button>
+                                    <button class="mdc-button mdc-card__action mdc-card__action--button">
+                                        <div class="mdc-button__ripple"></div>
+                                        <span class="mdc-button__label">Reviews</span>
+                                        <i class="material-icons mdc-button__icon">comment</i>
+                                    </button>
+                                    <button class="mdc-button mdc-card__action mdc-card__action--button">
+                                        <div class="mdc-button__ripple"></div>
+                                        <span class="mdc-button__label">Contact</span>
+                                        <i class="material-icons mdc-button__icon">phone</i>
+                                    </button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-me">
+        <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-4">
+                    <div class="mdc-card">
+                        <div class="mdc-card__content">
+                            <div class="personal-sec">
+                                <div class="profile-image">
+                                    <div class="profile-pic">
+                                        <img src="images/imran.jpg">
+                                    </div>
+                                    <!-- <button class="rounded-button mdc-button mdc-button--raised">  <span class="mdc-button__ripple"></span> Pro</button> -->
+                                    <div class="social-icon">
+                                        <ul>
+                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href=""><i class="fa fa-github"></i></a></li>
+                                            <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <button
+                                        class="rounded-button mdc-button mdc-button--unelevated demo-button-shaped mdc-ripple-upgraded"
+                                        style="--mdc-ripple-fg-size:55px; --mdc-ripple-fg-scale:1.972688859545706; --mdc-ripple-fg-translate-start:57.183349609375px, -17.29998779296875px; --mdc-ripple-fg-translate-end:18.34166717529297px, -9.5px;"><span
+                                            class="mdc-button__ripple"></span><i
+                                            class="material-icons mdc-button__icon">get_app</i><span
+                                            class="mdc-button__label">Download My CV</span>
+                                    </button>
+                                </div>
+                                <div class="profile-info">
+                                    <div class="name">
+                                        <h4>Imran Hossain</h4>
+                                    </div>
+                                    <div class="job-title">Web Developer</div>
+                                    <div class="website">www.codeperpixels.com</div>
+                                    <div class="short-desc">
+                                        <p class="desc-text">Expert web developer with over 10 years of experience. I worked almost exclusively with WordPress for 6+ years, but have been adding more skills to my arsenal over the past couple of years. The idea is to move to newer technologies, but I don't think I will be abandoning WP projects entirely, not for a while.
+                                        </p>
+                                    </div>
+                                    <div class="skill-badge">
+                                        <span class="badge-root">
+                                            <span class="badge-single deep-purple">
+                                                UI/UX
+                                            </span>
+                                        </span>
+                                        <span class="badge-root ">
+                                            <span class="badge-single blue">
+                                                Bootstrap
+                                            </span>
+                                        </span>
+                                        <span class="badge-root">
+                                            <span class="badge-single green">
+                                                Javascript
+                                            </span>
+                                        </span>
+                                        <span class="badge-root">
+                                            <span class="badge-single orange">
+                                                PHP
+                                            </span>
+                                        </span>
+                                        <span class="badge-root ">
+                                            <span class="badge-single cyan">
+                                                GO
+                                            </span>
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdc-layout-grid__cell--span-8">
+                    <div class="mdc-card">
+                        <div class="mdc-card__content">
+
+                            <div class="info-sec">
+                                <div class="mdc-layout-grid">
+                                    <div class="mdc-layout-grid__inner">
+                                        <div class="mdc-layout-grid__cell--span-6">
+                                            <div class="personal-info">
+                                                <div class="sec-title mdc-typography--headline5">Personal Info</div>
+                                                <ul class="info-text">
+                                                    <li><b>Birthday:</b> 13 Dec, 1994</li>
+                                                    <li><b>Phone:</b> +880 1921 213329</li>
+                                                    <li><b>Email: </b>gdimran@gmail</li>
+                                                    <li><b>Skype:</b> gdimran98</li>
+                                                    <li><b>Address:</b> 438/3A, Senpara Parbota, Kafrul, Dhaka, Bangladesh</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="mdc-layout-grid__cell--span-6">
+                                            <div class="experties">
+                                                <div class="sec-title  mdc-typography--headline5">My Expertise</div>
+                                                <ul class="expertist-list">
+                                                    <li class="mdc-list-item role=" menuitem"
+                                                        tabindex="0">
+                                                       
+                                                        <span class="mdc-list-item__graphic material-icons"
+                                                            aria-hidden="true">
+                                                            <i class="fa fa-paint-brush"></i>
+                                                        </span>
+                                                        <span class="mdc-list-item__text">
+                                                            <span class="mdc-list-item__primary-text">
+                                                                <b>Web Design</b>
+                                                            </span>
+                                                            <span class="mdc-list-item__secondary-text">
+                                                                Web application user interface design.
+                                                            </span>
+                                                        </span>
+                                                        <span class="mdc-list-item__ripple"></span>
+                                                    </li>
+                                                    <li class="mdc-list-item role=" menuitem"
+                                                        tabindex="0">
+                                                        <span class="mdc-list-item__graphic material-icons"
+                                                            aria-hidden="true">
+                                                            <i class="fa fa-laptop"></i>
+                                                        </span>
+                                                        <span class="mdc-list-item__text">
+                                                            <span class="mdc-list-item__primary-text">
+                                                                <b>Web Development</b>
+                                                            </span>
+                                                            <span class="mdc-list-item__secondary-text">
+                                                                Web application develop using php, JavaScript and golang.
+                                                            </span>
+                                                        </span>
+                                                        <span class="mdc-list-item__ripple"></span>
+                                                    </li>
+                                                    <li class="mdc-list-item role="menuitem" 
+                                                        tabindex="0">
+                                                        <span class="mdc-list-item__graphic material-icons"
+                                                            aria-hidden="true">
+                                                            <i class="fa fa-mobile-phone"></i>
+                                                        </span>
+                                                        <span class="mdc-list-item__text">
+                                                            <span class="mdc-list-item__primary-text">
+                                                                <b>Mobile Application</b>
+                                                            </span>
+                                                            <span class="mdc-list-item__secondary-text">
+                                                                Any kinds of mobile application design and development.
+                                                            </span>
+                                                        </span>
+                                                        <span class="mdc-list-item__ripple"></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/dashboard.js"></script>
 </body>
 
 </html>

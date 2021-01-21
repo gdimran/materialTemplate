@@ -1,0 +1,60 @@
+.red{
+    color:#f44336;
+    background:#ef9a9a;
+}
+.pink{
+    color:#e91e63;
+    background:#f48fb1;
+}
+.purple{
+    color:#7b1fa2;
+    background:#ce93d8;
+}
+.deep-purple{
+    color:#512da8;
+    background:#b39ddb;
+}
+.blue{
+    color:#1976d2;
+    background:#90caf9;
+}
+.light-blue{
+    color:#b3e5fc;
+    background:#039be5;
+}
+.cyan{
+    color:#26c6da;
+    background: #b2ebf2;
+}
+.green{
+    color: #43a047;
+    background:#c8e6c9;
+}
+.light-green{
+     color: #7cb342;
+    background:#c5e1a5;
+}
+.lime{
+    color:#cddc39;
+    background: #f0f4c3;
+}
+.yellow{
+    color:#fdd835;
+    background: #fff9c4;
+}
+.orange{
+    color:#fb8c00;
+    background:#ffe0b2;
+}
+
+.sec-title {
+	border-left: 5px solid #3CD4A0;
+	padding-left: 15px;
+}
+.desc-text{
+    color:#777;
+    font-size: 13px;
+}
+ul li{
+    list-style-type: none;
+}
